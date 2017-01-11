@@ -1,7 +1,7 @@
 node_modules
 .sass-cache
 app/deploy/*
-app/development/*
+app/development/wpstart/assets/*
 app/source/vendor/*
 npm-debug.log
 cred.txt
