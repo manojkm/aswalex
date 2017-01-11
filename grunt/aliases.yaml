@@ -38,7 +38,7 @@ default:
   - 'task_js'
   - 'task_img'
   - 'task_banner'
-  - 'task_html'
+  # - 'task_html'
   - 'task_copy'
   - 'task_sync'
 

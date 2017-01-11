@@ -3,20 +3,31 @@ module.exports = {
 
         bsFiles: {
             src: [
-                '<%= site.dev_assets %>/**',
-                '<%= site.dev %>/vendor/**',
-                '<%= site.dev %>/*.php',
-                '<%= site.dev %>/*.html'
+                '<%= site.env %>/css/*.css',
+                '<%= site.env %>/assets/**',
+                '<%= site.env %>/*.php'
             ]
         },
 
         options: {
-            watchTask: true, //Option 'false' will open browser directly without watching grunt tasks.
-           
-           port: '<%= site.dev_port %>',
-            server: {
-                baseDir: "<%= site.env_root %>"
-            }
+          watchTask: true, //Option 'false' will open browser directly without watching grunt tasks.
+          debugInfo: true,
+          logConnections: true,
+          notify: true,
+          proxy: "http://localhost/aswinalex/app/environment/",
+          ghostMode: {
+            scroll: true,
+            links: true,
+            forms: true
+          }
+
+        // proxy: "http://localhost/aswinalex/",
+
+        // port: '<%= site.dev_port %>',
+        // server: {
+        //     baseDir: "app/environment/",
+        //     index: "index.php"
+        // }
 
             
         }
