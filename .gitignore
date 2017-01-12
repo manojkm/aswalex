@@ -4,7 +4,3 @@ app/deploy/*
 app/development/wpstart/assets/*
 app/source/vendor/*
 npm-debug.log
-cred.txt
-
-
-
