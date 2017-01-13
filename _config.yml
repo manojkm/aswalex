@@ -12,6 +12,7 @@ dev_img:          <%= site.dev %>/assets/img
 dev_port:         8080
 
 env:              app/environment/wp-content/themes/wpstart
+env_assets:       <%= site.env %>/assets
 env_root:         app/environment/
 
 src:              app/source
