@@ -33,7 +33,7 @@ function wpstart_doctype() { ?>
  */
 if ( !function_exists( 'wpstart_wrapper_start' ) ) {
 	function wpstart_wrapper_start() { ?>
-		<div id="wrapper">
+		<div id="outerwrapper"><div id="wrapper">
 	<?php
 	}
 }
@@ -698,7 +698,7 @@ if ( !function_exists( 'wpstart_container_end' ) ) {
 if ( !function_exists( 'wpstart_content_end' ) ) {
 	function wpstart_content_end() { 
 		?>
-		</div><!-- #content -->
+		</div></div><!-- #content -->
 		<?php
 	}
 }
@@ -756,7 +756,7 @@ if ( !function_exists( 'wpstart_footer_content' ) ) {
 				<div class="sidebar sidebar-colophon">
 					<aside id="text" class="widget-container widget_text">		
 						<div class="textwidget">
-							<p>&copy; <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-info" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>. <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wpstart' ) ); ?>" class="site-generator" title="<?php esc_attr_e( 'Powered by WordPress', 'wpstart' ); ?>"><?php esc_attr_e( 'Powered by WordPress', 'wpstart' ); ?></a> &amp; <a href="http://demo.krusze.com/wpstart/" class="site-webdesign" title="WPstart Theme">WPstart Theme</a>.</p>	
+							<p>&copy; <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-info" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a><!-- . <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wpstart' ) ); ?>" class="site-generator" title="<?php esc_attr_e( 'Powered by WordPress', 'wpstart' ); ?>"><?php esc_attr_e( 'Powered by WordPress', 'wpstart' ); ?></a> &amp; <a href="http://demo.krusze.com/wpstart/" class="site-webdesign" title="WPstart Theme">WPstart Theme</a>. --></p>	
 						</div>
 					</aside>
 				</div>

@@ -53,7 +53,14 @@ do_action( 'wpstart_html_before' );
 
 	<?php do_action('wpstart_head_bottom'); ?>
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/aswinalex.min.css" type="text/css" media="screen" />
+	  <!-- bower:css -->
+      <!-- endbower -->
+
+      <!-- bower:js -->
+      <!-- endbower -->
 </head>
+
 
 <body <?php body_class(); ?>>
 

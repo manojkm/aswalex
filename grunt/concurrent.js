@@ -23,5 +23,5 @@ module.exports = {
         ['sync']
     ],
 
-    options: { logConcurrentOutput: true }
+    options: { logConcurrentOutput: true,  limit: 5 }
 };

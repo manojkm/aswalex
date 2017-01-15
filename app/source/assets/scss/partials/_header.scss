@@ -1,1 +1,6 @@
- 
+.site-description, .site-title {
+ @include font-size(14px);
+ line-height: normal;
+}
+
+.site-title a{float: none; font-weight: bold; margin-right: 2px;}
