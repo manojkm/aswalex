@@ -2,5 +2,6 @@ node_modules
 .sass-cache
 app/deploy/*
 app/development/wpstart/assets/*
+app/development/wpstart/vendor/*
 app/source/vendor/*
 npm-debug.log

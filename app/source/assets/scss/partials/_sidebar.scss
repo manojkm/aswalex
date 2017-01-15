@@ -4,7 +4,7 @@ ul#menu-right-menu{
 			list-style: none;
 			line-height: 25px;
 
-		a{@include font-size(14px); color: $primaryColor; }
+		a{color: $primaryColor; }
 		a:hover{color: $secondaryColor; text-decoration: none;}
 		}
 

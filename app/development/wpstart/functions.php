@@ -74,6 +74,28 @@ function wpstart_enqueue_scripts_and_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'wpstart_enqueue_scripts_and_styles' );
 
+
+//Enqueue scripts
+if (!function_exists('theme_name_bower_scripts')) :
+function theme_name_bower_scripts() {
+  // bower:js
+  wp_enqueue_script('vendor/jquery/dist/jquery.js', get_stylesheet_directory_uri() . '/vendor/jquery/dist/jquery.js', false, false, true);
+  wp_enqueue_script('vendor/bootstrap/dist/js/bootstrap.js', get_stylesheet_directory_uri() . '/vendor/bootstrap/dist/js/bootstrap.js', false, false, true);
+  // endbower
+}
+add_action('wp_enqueue_scripts', 'theme_name_bower_scripts');
+endif;
+
+//Enqueue styles
+if (!function_exists('theme_name_bower_styles')) :
+function theme_name_bower_styles() {
+  // bower:css
+  wp_enqueue_style('vendor/bootstrap/dist/css/bootstrap.css', get_stylesheet_directory_uri() . '/vendor/bootstrap/dist/css/bootstrap.css');
+  // endbower
+}
+add_action('wp_enqueue_scripts', 'theme_name_bower_styles');
+endif;
+
 /**
  * Adds home link to wp page menu.
  */

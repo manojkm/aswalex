@@ -1,5 +1,6 @@
+.navbar { margin-bottom: 0;}
 .site-description, .site-title {
- @include font-size(14px);
+ font-size: 16px;
  line-height: normal;
 }
 
