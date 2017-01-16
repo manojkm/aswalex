@@ -1,1 +1,15 @@
- 
+#outerwrapper{
+    @include background-image("papercurl.jpg", right bottom, #ffffff);
+}
+
+.entry-header {margin-bottom: 0px;}
+article.hentry {margin-bottom: 0px;}
+p{color: $primaryColor;}
+h6{color: $primaryColor;}
+#content > .container{background-color: transparent;} 
+
+
+/* Ultimate Responsive Image Slider */ 
+.sp-horizontal{ background-color: #eee; @include box-shadow(1px,1px,5px,2px, #ccc, false);} 
+// .sp-slides-container{ margin-bottom: 10px; border-width: 0 0 5px 0;  border-style: solid;border-color: #fff;}
+.sp-selected-thumbnail{border-width: 1px!important; padding: 2px;}

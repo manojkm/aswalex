@@ -1,1 +1,14 @@
+ul#menu-right-menu{
+		padding: 0;
+		li { 
+			list-style: none;
+			line-height: 25px;
 
+		a{color: $primaryColor; }
+		a:hover{color: $secondaryColor; text-decoration: none;}
+		}
+
+		li.current-menu-item{
+        	a{color: $secondaryColor;}
+		}
+}

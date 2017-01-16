@@ -2,9 +2,41 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body{background: $black}
+.container {width: $container-width - 250}
+#wrapper {width: $container-width - 250}
 
-@media only screen and (min-width: 992px) and (max-width: 1999px) {}
+.two-columns-right-sidebar #main {width:$main-width}
+.two-columns-right-sidebar #sidebar-primary {width:$sidebar-width}
+
+.entry-title{display:$none}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+
+body{background: $black}
+
+#outerwrapper{
+position:absolute;
+top: 50%;
+left: 50%;
+width:1000px;
+min-height:715px;
+margin-top: -357px; /*set to a negative number 1/2 of your height - http://www.infinitywebdesign.com/research/cssverticalcentereddiv.htm*/
+margin-left: -500px; /*set to a negative number 1/2 of your width*/
+@include background-image("papercurl.jpg", right bottom, #ffffff);
+}
+
+.container {width: $container-width}
+#wrapper {width: $container-width}
+
+.two-columns-right-sidebar #main {width:$main-width}
+.two-columns-right-sidebar #sidebar-primary {width:$sidebar-width}
+
+.entry-title{display:$none}
+
+}
 
 @media print,
 (-o-min-device-pixel-ratio: 5/4),
