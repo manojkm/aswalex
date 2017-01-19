@@ -9,7 +9,7 @@ deploy_img:       <%= site.deploy %>/assets/img
 dev:              app/development/wpstart
 dev_assets:       <%= site.dev %>/assets
 dev_img:          <%= site.dev %>/assets/img
-dev_port:         5623
+dev_port:         8080
 
 env:              app/environment/wp-content/themes/wpstart
 env_assets:       <%= site.env %>/assets
@@ -32,7 +32,6 @@ src_pages:        <%= site.src_templates %>/pages
 
 # Extensions
 src_helpers:      <%= site.src_templates %>/helpers/**/*.js
-
 preview:          preview
 
 

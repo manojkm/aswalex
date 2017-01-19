@@ -3,7 +3,6 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-body{background: $black}
 .container {width: $container-width - 250}
 #wrapper {width: $container-width - 250}
 
@@ -14,8 +13,6 @@ body{background: $black}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px) {
-
-body{background: $black}
 
 #outerwrapper{
 position:absolute;

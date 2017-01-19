@@ -40,7 +40,7 @@ module.exports = {
   },
 
 
-// Then place the following in your enqueue_scripts.php
+// Then place the following in your functions.php
 
 // //Enqueue scripts
 // if (!function_exists('theme_name_bower_scripts')) :
