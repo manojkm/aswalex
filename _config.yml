@@ -9,7 +9,7 @@ deploy_img:       <%= site.deploy %>/assets/img
 dev:              app/development/wpstart
 dev_assets:       <%= site.dev %>/assets
 dev_img:          <%= site.dev %>/assets/img
-dev_port:         5623
+dev_port:         8080
 
 env:              app/environment/wp-content/themes/wpstart
 env_assets:       <%= site.env %>/assets
