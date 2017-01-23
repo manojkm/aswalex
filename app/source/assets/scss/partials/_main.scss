@@ -1,3 +1,4 @@
+body{background: $black}
 #outerwrapper{
     @include background-image("papercurl.jpg", right bottom, #ffffff);
 }
@@ -13,3 +14,17 @@ h6{color: $primaryColor;}
 .sp-horizontal{ background-color: #eee; @include box-shadow(1px,1px,5px,2px, #ccc, false);} 
 // .sp-slides-container{ margin-bottom: 10px; border-width: 0 0 5px 0;  border-style: solid;border-color: #fff;}
 .sp-selected-thumbnail{border-width: 1px!important; padding: 2px;}
+
+
+/* Home */ 
+body.home{
+	text-align: center;
+
+	background-color: #f4f4f4;
+
+	header, .sidebar-primary{display: none;}
+
+	#outerwrapper {background-image: none; 	background-color: #f4f4f4;}
+	h6{ text-align: center;}
+
+}

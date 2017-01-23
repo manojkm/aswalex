@@ -32,7 +32,6 @@ src_pages:        <%= site.src_templates %>/pages
 
 # Extensions
 src_helpers:      <%= site.src_templates %>/helpers/**/*.js
-
 preview:          preview
 
 
