@@ -1,10 +1,12 @@
+
+#sidebar-primary{padding-top: 0;}
 ul#menu-right-menu{
 		padding: 0;
 		li { 
 			list-style: none;
 			line-height: 25px;
 
-		a{color: $primaryColor; }
+		a{color: $primaryColor; font-size:12px}
 		a:hover{color: $secondaryColor; text-decoration: none;}
 		}
 
