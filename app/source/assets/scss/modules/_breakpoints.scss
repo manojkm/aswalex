@@ -1,18 +1,18 @@
-@media only screen and (min-width: 320px) and (max-width: 479px) {.sp-horizontal{ margin-bottom: 10px; @include box-shadow(1px,1px,5px,2px, #ccc, false); padding: 0px }}
+@media only screen and (min-width: 320px) and (max-width: 479px) {}
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {.sp-horizontal{ margin-bottom: 10px; @include box-shadow(1px,1px,5px,2px, #ccc, false); padding: 0px }}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.container {width: $container-width - 250}
-#wrapper {width: $container-width - 250}
+// .container {width: $container-width - 250}
+// #wrapper {width: $container-width - 250}
 
 .two-columns-right-sidebar #main {width:$main-width}
 .two-columns-right-sidebar #sidebar-primary {width:$sidebar-width}
 
 .entry-title{display:$none}
 
-.sp-horizontal{ margin-bottom: 10px; @include box-shadow(1px,1px,5px,2px, #ccc, false); padding: 0px }
-
+// .sp-horizontal{ margin-bottom: 10px; @include box-shadow(1px,1px,5px,2px, #ccc, false); padding: 0px }
+#navbar-navigation ul#menu-right-menu{display: none;}
 
 }
 
@@ -23,8 +23,8 @@ position:absolute;
 top: 50%;
 left: 50%;
 width:930px;
-min-height:656px;
-margin-top: -328px; /*set to a negative number 1/2 of your height - http://www.infinitywebdesign.com/research/cssverticalcentereddiv.htm*/
+min-height:628px;
+margin-top: -314px; /*set to a negative number 1/2 of your height - http://www.infinitywebdesign.com/research/cssverticalcentereddiv.htm*/
 margin-left: -465px; /*set to a negative number 1/2 of your width*/
 @include background-image("papercurl.jpg", right bottom, #ffffff);
 }
@@ -36,7 +36,7 @@ margin-left: -465px; /*set to a negative number 1/2 of your width*/
 .two-columns-right-sidebar #sidebar-primary {width:$sidebar-width; }
 
 .entry-title{display:$none}
-
+#navbar-navigation ul#menu-right-menu{display: none;}
 }
 
 @media print,
