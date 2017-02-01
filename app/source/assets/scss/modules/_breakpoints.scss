@@ -23,8 +23,8 @@ position:absolute;
 top: 50%;
 left: 50%;
 width:930px;
-min-height:628px;
-margin-top: -314px; /*set to a negative number 1/2 of your height - http://www.infinitywebdesign.com/research/cssverticalcentereddiv.htm*/
+min-height:608px;
+margin-top: -304px; /*set to a negative number 1/2 of your height - http://www.infinitywebdesign.com/research/cssverticalcentereddiv.htm*/
 margin-left: -465px; /*set to a negative number 1/2 of your width*/
 @include background-image("papercurl.jpg", right bottom, #ffffff);
 }
@@ -37,6 +37,8 @@ margin-left: -465px; /*set to a negative number 1/2 of your width*/
 
 .entry-title{display:$none}
 #navbar-navigation ul#menu-right-menu{display: none;}
+
+.sp-image{ width: 650px!important}
 }
 
 @media print,

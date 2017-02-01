@@ -21,7 +21,8 @@ h6{color: $primaryColor;}
 // .sp-horizontal{ background-color: #eee; @include box-shadow(1px,1px,5px,2px, #ccc, false);} 
 // .sp-horizontal{ margin-bottom: 10px;}
 .sp-selected-thumbnail{border-width: 1px!important;}
-.sp-bottom-thumbnails { padding: 15px 0 0 0}
+.sp-bottom-thumbnails { padding: 15px 0 0 0; margin: 0}
+.sp-slides-container{  @include border-all(0 0 1px 0, solid, lighten($primaryColor, 40%)); padding: 0 0 15px 0 }
 // .sp-thumbnails-container { @include box-shadow(1px,1px,5px,2px, #ccc, false); @include border-all(10px, solid, #FFF);margin: 15px 0 0 0}
 
 /* Home */ 
@@ -37,6 +38,7 @@ body.home{
 
 }
 
+#comments { margin-top: 0;}
 /* Video */ 
 
 .video-container {
